@@ -1,0 +1,57 @@
+body {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace ;
+    color: #F2F2F2;
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, #076DF2 0%, #076DF2 50%, #F2F2F2 100%);
+}
+
+div {
+    display: grid;
+    border-style: outset;
+    border-color: #F2F2F2 ;
+    gap: 10px;
+    padding: 5px;
+    background-color: #0D0D0D;
+}
+
+.header {
+    grid-template-areas: 
+    'name links'
+    'desc desc';
+}
+
+#name {
+    grid-area: name;
+    border-style: none;
+}
+
+#links {
+    grid-area: links;
+    justify-content: center;
+    border-style: none;
+}
+
+#desc {
+    grid-area: desc;
+    border-style: none;
+}
+
+.tech_stack {
+    grid-area: main;
+}
+
+#school_register {
+    grid-template-areas: 
+    'vid desc';
+}
+
+#video_uni_register {
+    grid-area: vid;
+    border-style: none;
+}
+
+#description_uni_register {
+    grid-area: desc;
+    border-style: none;
+}
