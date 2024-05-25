@@ -1,7 +1,7 @@
 body {
     font-size: 20px;
     font-family:'Courier New', Courier, monospace ;
-    color: #F2F2F2;
+    color: #0d0d0d;
     background: rgb(2,0,36);
     background: linear-gradient(135deg, #076DF2 0%, #076DF2 50%, #F2F2F2 100%);
 }
@@ -9,13 +9,17 @@ body {
 div {
     display: grid;
     border-style: outset;
-    border-color: #F2F2F2 ;
+    border-color: #cecece ;
     gap: 10px;
     padding: 5px;
-    background-color: #0D0D0D;
+    background-color: #F2F2F2;
 }
 
-.header {
+ul {
+    list-style-position: outside;
+}
+
+#header {
     grid-template-areas: 
     'name links'
     'desc desc';
@@ -37,8 +41,9 @@ div {
     border-style: none;
 }
 
-.tech_stack {
+#tech_stack {
     grid-area: main;
+    grid-template-columns: auto auto auto;
 }
 
 #school_register {
@@ -55,3 +60,41 @@ div {
     grid-area: desc;
     border-style: none;
 }
+
+
+/* Images for lists */
+#python {list-style: url(images/python.png);}
+
+#java {list-style: url(images/java.png);}
+
+#c_cpp {list-style: url(images/c.png);}
+
+#sql {list-style: url(images/sql.png);}
+
+#html_css {list-style: url(images/html.png);}
+
+#haskell {list-style: url(images/haskell.png);}
+
+#xml {list-style: url(images/xml.png);}
+
+#assembly {list-style: url(images/asm.png);}
+
+#bash {list-style: url(images/bash.png);}
+
+#javafx {list-style: url(images/java.png);}
+
+#junit {list-style: url(images/junit.png);}
+
+#maven {list-style: url(images/maven.png);}
+
+#git {list-style: url(images/git.png);}
+
+#github {list-style: url(images/github.png);}
+
+#vscode {list-style: url(images/vscode.png);}
+
+#intellij {list-style: url(images/intellij.png);}
+
+#clion {list-style: url(images/clion.png);}
+
+#vp {list-style: url(images/vp.png);}
