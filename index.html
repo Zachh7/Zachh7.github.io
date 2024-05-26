@@ -6,16 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"/>
+
 	</head>
 	<body>
 		<div id="header">
 			<div id="name">
-				<h1>Zachary Dubé-Bouliane</h1>
+				<h1> <i class="iconoir-terminal"></i>Zachary Dubé-Bouliane</h1>
 			</div>
 			<div id="links">
 				<ul>
-					<li>GitHub</li>
-					<li>LinkedIn</li>
+					<li class="github"><a href="https://github.com/Zachh7" target="_blank">GitHub</a></li>
+					<li id="linkedin"><a href="https://www.linkedin.com/in/zachary-dube-bouliane" target="_blank">LinkedIn</a></li>
+					<li><a href="ZacharyDB_Resume.pdf" target="_blank">My Resume</a></li>
 				</ul>
 			</div>
 			<div id="desc">
@@ -30,7 +33,7 @@
 		<h2>Tech Stack</h2>
 		<div id="tech_stack">
 			<div id="language">
-				<h3>Language</h3>
+				<h3><i class="iconoir-code"></i>  Language</h3>
 				<ul>
 					<li id="python">Python</li>
 					<li id="java">Java</li>
@@ -44,15 +47,15 @@
 				</ul>
 			</div>
 			<div id="frameworks">
-				<h3>Frameworks</h3>
+				<h3><i class="iconoir-box-iso"></i> Frameworks</h3>
 				<li id="javafx">JavaFX</li>
 				<li id="junit">JUnit</li>
 				<li id="maven">Maven</li>
 			</div>
 			<div id="developper_tools">
-				<h3>Dev Tools</h3>
+				<h3><i class="iconoir-git-fork"></i>  Dev Tools</h3>
 				<li id="git">Git</li>
-				<li id="github">GitHub</li>
+				<li class="github">GitHub</li>
 				<li id="vscode">VSCode</li>
 				<li id="intellij">IntelliJ</li>
 				<li id="clion">CLion</li>
@@ -62,25 +65,46 @@
 
 		<h2>Projects</h2>
 		<div class="projects">
-			<div class="project">
-				<div id="school_register">
+			<div class="project" id="school_register">
 
-					<div id="video_uni_register">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/zHH_KHN1nH8?si=s-QQwXwZujVDYdKt?mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
-					</div>
-
-					<div id="description_uni_register">
-						<p>
-							A university course registering system made in Java with JavaFX, 
-							using Java Sockett to connect to a server containing the database for the 
-							courses and user.
-						</p>
-					</div>
-
+				<div id="video_uni_register">
+					<iframe width="756" height="504" src="https://www.youtube.com/embed/zHH_KHN1nH8?si=s-QQwXwZujVDYdKt?mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
 				</div>
+
+				<div id="description_uni_register">
+					<p>
+						A university course registering system made in Java with JavaFX, 
+						using Java Sockett to connect to a server containing the database for the 
+						courses and user.
+						<ul>
+							<li>Created the UI with JavaFX</li>
+							<li>Used Java Socket to connect the client to the server when registrering for a class</li>
+							<li>Created a simple database in a CSV file for the classes and registration</li>
+						</ul>
+					</p>
+				</div>
+
+			</div>
+			<div class="project" id="maze">
+				<div id="maze_desc">
+					<p>
+						3D maze generator
+						<ul>
+							<li>Generated a maze layout using python with a depth first search algorithm</li>
+							<li>Transformed that layout in a openscad file with python</li>
+							<li>Using openscad, rendered the maze and exported the stl file</li>
+							<li>Sliced the maze and exported the gcode to 3D print</li>
+						</ul>
+					</p>
+				</div>
+			<img id="maze_py" src="C:\Users\Zach\Desktop\Ecole\Pages\images\maze\maze_py.png"/>
+			<img id="maze_scad" src="C:\Users\Zach\Desktop\Ecole\Pages\images\maze\maze_openscad.png"/>
+			<img id="maze_irl" src="C:\Users\Zach\Desktop\Ecole\Pages\images\maze\maze_irl.jpg"/>
+
 			</div>
 		</div>
 
-		<!-- Scripts -->
 	</body>
 </html>
+
+<?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ff0000"><path d="M13 17H20" stroke="#ff0000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 7L10 12L5 17" stroke="#ff0000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
