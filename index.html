@@ -23,10 +23,7 @@
 			</div>
 			<div id="desc">
 				<p>
-					I am a student in computer science at Université de Montréal and in the third year of my
-					bachelor’s degree and expecting to graduate in december 2025. I have always had a particular interest for technology and video games. My goal
-					is to work in the video games industry, but I am keeping an open mind since, in my courses, I am
-					learning about new subjects that I find interesting such as web design and computer architecture. 
+					I am currently a third-year Computer Science student at the Université de Montréal, with an expected graduation date in December 2025. I have always had a strong passion for technology and video games. However, I am also exploring other areas of interest through my coursework, including web design and computer architecture, and I remain open to diverse opportunities in the tech field
 				</p>
 			</div>
 		</div>
@@ -44,6 +41,8 @@
 					<li id="xml">XML</li>
 					<li id="assembly">Assembly</li>
 					<li id="bash">Bash</li>
+					<li id="js">Java-Script</li>
+
 				</ul>
 			</div>
 			<div id="frameworks">
@@ -51,6 +50,14 @@
 				<li id="javafx">JavaFX</li>
 				<li id="junit">JUnit</li>
 				<li id="maven">Maven</li>
+				<li id="three">THREE.js</li>
+
+			</div>
+			<div id="libraries">
+				<h3><i class="iconoir-book-stack"></i> Libraries</h3>
+				<li id="numpy">NumPy</li>
+				<li id="sklearn">scikit-learn</li>
+				<li id="matplotlib">Matplotlib</li>
 			</div>
 			<div id="developper_tools">
 				<h3><i class="iconoir-git-fork"></i>  Dev Tools</h3>
@@ -65,26 +72,62 @@
 
 		<h2>Projects</h2>
 		<div class="projects">
-			<div class="project" id="school_register">
 
-				<div id="video_uni_register">
-					<iframe width="756" height="504" src="https://www.youtube.com/embed/zHH_KHN1nH8?si=s-QQwXwZujVDYdKt?mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
-				</div>
+			<div class="project" id="tree">
 
-				<div id="description_uni_register">
+					<video class="tree-video" width="756" height="504" autoplay muted loop>
+						<source src="images/tree/tree_wind.mp4" type="video/mp4">
+					</video>
+
+				<div class="tree-description">
 					<p>
-						A university course registering system made in Java with JavaFX, 
-						using Java Sockett to connect to a server containing the database for the 
-						courses and user.
-						<ul>
-							<li>Created the UI with JavaFX</li>
-							<li>Used Java Socket to connect the client to the server when registrering for a class</li>
-							<li>Created a simple database in a CSV file for the classes and registration</li>
-						</ul>
+						A tree simulation made using THREE.js.
+					<ul>
+						<li>Generated the mesh along splines representing the tree.</li>
+						<li>Applied transformation matrix to the tree to simulate wind and propagate the matrix to the child branches.</li>
+						<li>Added leaves and apples using different geometries with THREE.js.</li>
+					</ul>
+					</p>
+				</div>
+			</div>
+
+			<div class="project" id="rt">
+
+
+				<div class="rt-description">
+					<p>
+						A raytracer made for a graphics programming course in C++.
+					<ul>
+						<li>Implemented support for geometries such as spheres, cylinder, planes, and triangles (meshes) for realistic lighting
+							and shadows.</li>
+						<li>Added support for reflection, refraction, and material properties (e.g., diffuse, specular) to simulate realistic surface
+							interactions.</li>
+						<li>Simulated point and directional lighting and developed adjustable camera parameters (e.g., field of view, depth of
+							field).</li>
+					</ul>
 					</p>
 				</div>
 
+					<img id="rt-img" src="images/raytracer/rt_image_cropped.PNG"/>
+
 			</div>
+
+			<div class="project" id="school_register">
+				<div class="project-video">
+					<iframe width="756" height="504" src="https://www.youtube.com/embed/zHH_KHN1nH8?si=s-QQwXwZujVDYdKt?mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="project-description">
+					<p>
+						A university course registering system made in Java with JavaFX, using Java Socket to connect to a server containing the database for the courses and users.
+					<ul>
+						<li>Created the UI with JavaFX</li>
+						<li>Used Java Socket to connect the client to the server when registering for a class</li>
+						<li>Created a simple database in a CSV file for the classes and registration</li>
+					</ul>
+					</p>
+				</div>
+			</div>
+
 			<div class="project" id="maze">
 				<div id="maze_desc">
 					<p>

@@ -43,12 +43,43 @@ ul {
 
 #tech_stack {
     grid-area: main;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
 }
 
 .project {
     
 }
+
+#tree {
+    grid-template-areas:
+        'vid desc';
+}
+
+#tree-video {
+    grid-area: vid;
+    border-style: none;
+}
+
+#tree-description {
+    grid-area: desc;
+    border-style: none;
+}
+
+#rt {
+    grid-template-areas:
+        'desc img';
+}
+
+#rt-description {
+    grid-area: desc;
+    border-style: none;
+}
+
+#rt-img {
+    grid-area: img;
+    border-style: none;
+}
+
 
 #school_register {
     grid-template-areas: 
@@ -89,9 +120,14 @@ ul {
     width: 500px;
 }
 
+#rt-img {
+    grid-area: img;
+    width: 1000px;
+}
+
 
 /* Iconoir */
-.iconoir-box-iso, .iconoir-git-fork, .iconoir-code, .iconoir-terminal {
+.iconoir-box-iso, .iconoir-git-fork, .iconoir-code, .iconoir-terminal, .iconoir-book-stack {
     color: #0d0d0d;
     height: 20px;
 }
@@ -137,3 +173,13 @@ ul {
 #clion {list-style: url(images/icons/clion.png);}
 
 #vp {list-style: url(images/icons/vp.png);}
+
+#js {list-style: url(images/icons/java-script.png);}
+
+#numpy {list-style: url(images/icons/NumPy.png);}
+
+#sklearn {list-style: url(images/icons/scikit-learn.png);}
+
+#matplotlib {list-style: url(images/icons/Matplotlib.png);}
+
+#three {list-style: url(images/icons/three.js.png);}
