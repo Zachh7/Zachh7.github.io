@@ -1,151 +1,193 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title></title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="icon" href="favicon.ico">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zachary Dubé-Bouliane</title>
+    <link rel="icon" href="favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-	</head>
-	<body>
-		<div id="header">
-			<div id="name">
-				<h1> <i class="iconoir-terminal"></i>Zachary Dubé-Bouliane</h1>
-			</div>
-			<div id="links">
-				<ul>
-					<li class="github"><a href="https://github.com/Zachh7" target="_blank">GitHub</a></li>
-					<li id="linkedin"><a href="https://www.linkedin.com/in/zachary-dube-bouliane" target="_blank">LinkedIn</a></li>
-					<li><a href="ZacharyDB_Resume.pdf" target="_blank">My Resume</a></li>
-				</ul>
-			</div>
-			<div id="desc">
-				<p>
-					I am currently a third-year Computer Science student at the Université de Montréal, with an expected graduation date in December 2025. I have always had a strong passion for technology and video games. However, I am also exploring other areas of interest through my coursework, including web design and computer architecture, and I remain open to diverse opportunities in the tech field
-				</p>
-			</div>
-		</div>
-		<h2>Tech Stack</h2>
-		<div id="tech_stack">
-			<div id="language">
-				<h3><i class="iconoir-code"></i>  Language</h3>
-				<ul>
-					<li id="python">Python</li>
-					<li id="java">Java</li>
-					<li id="c_cpp">C/C++</li>
-					<li id="sql">SQL (SQLite, SQLServer)</li>
-					<li id="html_css">HTML/CSS</li>
-					<li id="haskell">Haskell</li>
-					<li id="xml">XML</li>
-					<li id="assembly">Assembly</li>
-					<li id="bash">Bash</li>
-					<li id="js">Java-Script</li>
+<body class="bg-light text-dark">
 
-				</ul>
-			</div>
-			<div id="frameworks">
-				<h3><i class="iconoir-box-iso"></i> Frameworks</h3>
-				<li id="javafx">JavaFX</li>
-				<li id="junit">JUnit</li>
-				<li id="maven">Maven</li>
-				<li id="three">THREE.js</li>
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4 mb-5">
+        <div class="container text-center">
+            <h1 class="mb-3">
+                <i class="iconoir-terminal"></i> Zachary Dubé-Bouliane
+            </h1>
+            <ul class="list-inline mb-3">
+                <li class="list-inline-item">
+                    <a href="https://github.com/Zachh7" target="_blank" class="text-decoration-none"><img src="images/icons/github.png" alt="GitHub" class="icon me-2">GitHub</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/zachary-dube-bouliane" target="_blank" class="text-decoration-none"><img src="images/icons/linkedin.png" alt="linkedin" class="icon me-2">LinkedIn</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="ZacharyDB_Resume.pdf" target="_blank" class="text-decoration-none">Resume</a>
+                </li>
+            </ul>
+            <p class="lead mx-auto" style="max-width: 800px;">
+                I am currently a third-year Computer Science student at the Université de Montréal, with an expected graduation date in December 2025. 
+                I have always had a strong passion for technology and video games. However, I am also exploring other areas of interest through my coursework, 
+                including web design and computer architecture, and I remain open to diverse opportunities in the tech field.
+            </p>
+        </div>
+    </header>
 
-			</div>
-			<div id="libraries">
-				<h3><i class="iconoir-book-stack"></i> Libraries</h3>
-				<li id="numpy">NumPy</li>
-				<li id="sklearn">scikit-learn</li>
-				<li id="matplotlib">Matplotlib</li>
-			</div>
-			<div id="developper_tools">
-				<h3><i class="iconoir-git-fork"></i>  Dev Tools</h3>
-				<li id="git">Git</li>
-				<li class="github">GitHub</li>
-				<li id="vscode">VSCode</li>
-				<li id="intellij">IntelliJ</li>
-				<li id="clion">CLion</li>
-				<li id="vp">Visual Paradigm (UML/Class diagrams)</li>
-			</div>
-		</div>
+    <!-- Tech Stack -->
 
-		<h2>Projects</h2>
-		<div class="projects">
+    <section class="container mb-5">
+        <h2 class="text-center mb-4">Tech Stack</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5><i class="iconoir-code"></i> Languages</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><img src="images/icons/python.png" alt="Python" class="icon me-2">Python</li>
+                            <li><img src="images/icons/java.png" alt="Java" class="icon me-2">Java</li>
+                            <li><img src="images/icons/c.png" alt="C" class="icon me-2">C/C++</li>
+                            <li><img src="images/icons/sql.png" alt="SQL" class="icon me-2">SQL (SQLite, SQLServer)</li>
+                            <li><img src="images/icons/html.png" alt="html" class="icon me-2">HTML/CSS</li>
+                            <li><img src="images/icons/haskell.png" alt="haskell" class="icon me-2">Haskell</li>
+                            <li><img src="images/icons/bash.png" alt="bash" class="icon me-2">Bash</li>
+                            <li><img src="images/icons/java-script.png" alt="java-script" class="icon me-2">JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-			<div class="project" id="tree">
+			
+            <div class="col-md-4">
+                <div class="card h-45 mb-3">
+                    <div class="card-body">
+                        <h5><i class="iconoir-box-iso"></i> Frameworks</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><img src="images/icons/java.png" alt="javafx" class="icon me-2">JavaFX</li>
+                            <li><img src="images/icons/Three.png" alt="threejs" class="icon me-2">THREE.js</li>
+                        </ul>
+                    </div>
+                </div>
 
-					<video class="tree-video" width="756" height="504" autoplay muted loop>
-						<source src="images/tree/tree_wind.mp4" type="video/mp4">
-					</video>
+            
+                <div class="card h-55">
+                    <div class="card-body">
+                        <h5><i class="iconoir-book-stack"></i> Libraries</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><img src="images/icons/NumPy.png" alt="NumPy" class="icon me-2">NumPy</li>
+                            <li><img src="images/icons/scikit-learn.png" alt="scikit-learn" class="icon me-2">scikit-learn</li>
+                            <li><img src="images/icons/Matplotlib.png" alt="Matplotlib" class="icon me-2">Matplotlib</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-				<div class="tree-description">
-					<p>
-						A tree simulation made using THREE.js.
-					<ul>
-						<li>Generated the mesh along splines representing the tree.</li>
-						<li>Applied transformation matrix to the tree to simulate wind and propagate the matrix to the child branches.</li>
-						<li>Added leaves and apples using different geometries with THREE.js.</li>
-					</ul>
-					</p>
-				</div>
-			</div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5><i class="iconoir-git-fork"></i> Dev Tools</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><img src="images/icons/git.png" alt="git" class="icon me-2">Git</li>
+                            <li><img src="images/icons/github.png" alt="github" class="icon me-2">GitHub</li>
+                            <li><img src="images/icons/vscode.png" alt="vscode" class="icon me-2">VSCode</li>
+                            <li><img src="images/icons/intellij.png" alt="intellij" class="icon me-2">IntelliJ</li>
+                            <li><img src="images/icons/clion.png" alt="clion" class="icon me-2">CLion</li>
+                            <li><img src="images/icons/vp.png" alt="vp" class="icon me-2">Visual Paradigm (UML)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<div class="project" id="rt">
+    <!-- Projects -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row g-4">
 
+            <!-- Tree Simulation -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <video class="card-img-top" autoplay muted loop>
+                        <source src="images/tree/tree_wind.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">Tree Simulation</h5>
+                        <p>Built using THREE.js to simulate tree movement under wind using transformation matrices.</p>
+                        <ul>
+                            <li>Generated mesh along splines representing the tree.</li>
+                            <li>Applied transformation matrices to simulate wind propagation.</li>
+                            <li>Added leaves and apples using THREE.js geometries.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-				<div class="rt-description">
-					<p>
-						A raytracer made for a graphics programming course in C++.
-					<ul>
-						<li>Implemented support for geometries such as spheres, cylinder, planes, and triangles (meshes) for realistic lighting
-							and shadows.</li>
-						<li>Added support for reflection, refraction, and material properties (e.g., diffuse, specular) to simulate realistic surface
-							interactions.</li>
-						<li>Simulated point and directional lighting and developed adjustable camera parameters (e.g., field of view, depth of
-							field).</li>
-					</ul>
-					</p>
-				</div>
+            <!-- Raytracer -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <img src="images/raytracer/rt_image_cropped.PNG" class="card-img-top" alt="Raytracer Output" />
+                    <div class="card-body">
+                        <h5 class="card-title">C++ Raytracer</h5>
+                        <p>Raytracer built for a computer graphics course in C++.</p>
+                        <ul>
+                            <li>Supported spheres, cylinders, planes, and meshes with realistic lighting and shadows.</li>
+                            <li>Implemented reflection, refraction, and material properties.</li>
+                            <li>Added support for point and directional lighting with adjustable camera parameters.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-					<img id="rt-img" src="images/raytracer/rt_image_cropped.PNG"/>
-
-			</div>
-
-			<div class="project" id="school_register">
+            <!-- School Register -->
+            <div class="col-lg-6">
+                <div class="card h-100">
 				<div class="project-video">
 					<iframe width="756" height="504" src="https://www.youtube.com/embed/zHH_KHN1nH8?si=s-QQwXwZujVDYdKt?mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
-				<div class="project-description">
-					<p>
-						A university course registering system made in Java with JavaFX, using Java Socket to connect to a server containing the database for the courses and users.
-					<ul>
-						<li>Created the UI with JavaFX</li>
-						<li>Used Java Socket to connect the client to the server when registering for a class</li>
-						<li>Created a simple database in a CSV file for the classes and registration</li>
-					</ul>
-					</p>
-				</div>
-			</div>
 
-			<div class="project" id="maze">
-				<div id="maze_desc">
-					<p>
-						3D maze generator
-						<ul>
-							<li>Generated a maze layout using python with a depth first search algorithm</li>
-							<li>Transformed that layout in a openscad file with python</li>
-							<li>Using openscad, rendered the maze and exported the stl file</li>
-							<li>Sliced the maze and exported the gcode to 3D print</li>
-						</ul>
-					</p>
-				</div>
-			<img id="maze_py" src="images/maze/maze_py.png"/>
-			<img id="maze_scad" src="images/maze/maze_openscad.png"/>
-			<img id="maze_irl" src="images/maze/maze_irl.jpg"/>
+                    <div class="card-body">
+                        <h5 class="card-title">School Registration System</h5>
+                        <p>JavaFX app connecting to a server via Java Sockets for managing university course registration.</p>
+                        <ul>
+                            <li>Designed UI with JavaFX.</li>
+                            <li>Used sockets for client-server communication.</li>
+                            <li>Stored class and registration data in CSV files.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-			</div>
-		</div>
+            <!-- Maze Generator -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">3D Maze Generator</h5>
+                        <p>Generated and 3D printed mazes using Python and OpenSCAD.</p>
+                        <ul>
+                            <li>Generated maze layout with DFS algorithm.</li>
+                            <li>Converted layout to OpenSCAD geometry.</li>
+                            <li>Rendered, exported STL, and 3D printed.</li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center p-3">
+                        <img src="images/maze/maze_py.png" class="img-fluid rounded m-1" style="max-width: 30%;" alt="Maze Python" />
+                        <img src="images/maze/maze_openscad.png" class="img-fluid rounded m-1" style="max-width: 30%;" alt="Maze OpenSCAD" />
+                        <img src="images/maze/maze_irl.jpg" class="img-fluid rounded m-1" style="max-width: 30%;" alt="Maze 3D Print" />
+                    </div>
+                </div>
+            </div>
 
-	</body>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-white border-top">
+        <p class="mb-0">© 2025 Zachary Dubé-Bouliane</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

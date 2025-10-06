@@ -1,185 +1,108 @@
+/* Base Styles */
 body {
     font-size: 20px;
-    font-family:'Courier New', Courier, monospace ;
+    font-family: 'Courier New', Courier, monospace;
     color: #0d0d0d;
-    background: rgb(2,0,36);
     background: linear-gradient(135deg, #076DF2 0%, #076DF2 50%, #F2F2F2 100%);
 }
 
-div {
-    display: grid;
-    border-style: outset;
-    border-color: #cecece ;
-    gap: 10px;
-    padding: 5px;
-    background-color: #F2F2F2;
+h1, h2, h3, h5 {
+    font-weight: 600;
 }
 
-ul {
-    list-style-position: outside;
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
 }
 
-#header {
-    grid-template-areas: 
-    'name links'
-    'desc desc';
+header h1 i {
+    color: #0d0d0d;
+    height: 28px;
+    margin-right: 8px;
 }
 
-#name {
-    grid-area: name;
-    border-style: none;
+/* Links in header */
+header ul.list-inline li a {
+    font-weight: 500;
+    padding: 0 10px;
+    color: #076DF2;
+    transition: color 0.3s;
 }
 
-#links {
-    grid-area: links;
-    justify-content: center;
-    border-style: none;
+header ul.list-inline li a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
 }
 
-#desc {
-    grid-area: desc;
-    border-style: none;
+/* Tech Stack Cards */
+.card h5 i {
+    color: #0d0d0d;
+    margin-right: 6px;
 }
 
-#tech_stack {
-    grid-area: main;
-    grid-template-columns: auto auto auto auto;
+/* Project Cards */
+.card ul {
+    padding-left: 20px;
 }
 
-.project {
-    
+.card img, .card video, .card iframe {
+    border-radius: 6px;
+    max-width: 100%;
+    height: auto;
 }
 
-#tree {
-    grid-template-areas:
-        'vid desc';
+/* Maze Images Flex Layout */
+#maze .d-flex img {
+    border-radius: 6px;
+    margin: 5px;
 }
 
-#tree-video {
-    grid-area: vid;
-    border-style: none;
+/* Footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #0d0d0d;
 }
 
-#tree-description {
-    grid-area: desc;
-    border-style: none;
-}
+/* List Icons for Tech Stack */
+ul li#linkedin { list-style: url(images/icons/linkedin.png) inside; }
+ul li#python { list-style: url(images/icons/python.png) inside; }
+ul li#java { list-style: url(images/icons/java.png) inside; }
+ul li#c_cpp { list-style: url(images/icons/c.png) inside; }
+ul li#sql { list-style: url(images/icons/sql.png) inside; }
+ul li#html_css { list-style: url(images/icons/html.png) inside; }
+ul li#haskell { list-style: url(images/icons/haskell.png) inside; }
+ul li#xml { list-style: url(images/icons/xml.png) inside; }
+ul li#assembly { list-style: url(images/icons/asm.png) inside; }
+ul li#bash { list-style: url(images/icons/bash.png) inside; }
+ul li#js { list-style: url(images/icons/java-script.png) inside; }
+ul li#javafx { list-style: url(images/icons/java.png) inside; }
+ul li#junit { list-style: url(images/icons/junit.png) inside; }
+ul li#maven { list-style: url(images/icons/maven.png) inside; }
+ul li#git { list-style: url(images/icons/git.png) inside; }
+ul li.github { list-style: url(images/icons/github.png) inside; }
+ul li#vscode { list-style: url(images/icons/vscode.png) inside; }
+ul li#intellij { list-style: url(images/icons/intellij.png) inside; }
+ul li#clion { list-style: url(images/icons/clion.png) inside; }
+ul li#vp { list-style: url(images/icons/vp.png) inside; }
+ul li#numpy { list-style: url(images/icons/NumPy.png) inside; }
+ul li#sklearn { list-style: url(images/icons/scikit-learn.png) inside; }
+ul li#matplotlib { list-style: url(images/icons/Matplotlib.png) inside; }
+ul li#three { list-style: url(images/icons/Three.png) inside; }
 
-#rt {
-    grid-template-areas:
-        'desc img';
-}
-
-#rt-description {
-    grid-area: desc;
-    border-style: none;
-}
-
-#rt-img {
-    grid-area: img;
-    border-style: none;
-}
-
-
-#school_register {
-    grid-template-areas: 
-    'vid desc';
-}
-
-#video_uni_register {
-    grid-area: vid;
-    border-style: none;
-}
-
-#description_uni_register {
-    grid-area: desc;
-    border-style: none;
-}
-
-#maze {
-    grid-template-areas: 
-    'desc py scad irl';
-}
-
-#maze_desc {
-    grid-area: desc;
-}
-
-#maze_py {
-    grid-area: py;
-    width: 500px;
-}
-
-#maze_scad {
-    grid-area: scad;
-    width: 500px;
-}
-
-#maze_irl {
-    grid-area: irl;
-    width: 500px;
-}
-
-#rt-img {
-    grid-area: img;
-    width: 1000px;
-}
-
-
-/* Iconoir */
-.iconoir-box-iso, .iconoir-git-fork, .iconoir-code, .iconoir-terminal, .iconoir-book-stack {
+/* Iconoir General */
+.iconoir-box-iso,
+.iconoir-git-fork,
+.iconoir-code,
+.iconoir-terminal,
+.iconoir-book-stack {
     color: #0d0d0d;
     height: 20px;
 }
-.iconoir-terminal {
-    height: 28px;
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
 }
-
-/* Images for lists */
-#linkedin {list-style: url(images/icons/linkedin.png);}
-
-#python {list-style: url(images/icons/python.png);}
-
-#java {list-style: url(images/icons/java.png);}
-
-#c_cpp {list-style: url(images/icons/c.png);}
-
-#sql {list-style: url(images/icons/sql.png);}
-
-#html_css {list-style: url(images/icons/html.png);}
-
-#haskell {list-style: url(images/icons/haskell.png);}
-
-#xml {list-style: url(images/icons/xml.png);}
-
-#assembly {list-style: url(images/icons/asm.png);}
-
-#bash {list-style: url(images/icons/bash.png);}
-
-#javafx {list-style: url(images/icons/java.png);}
-
-#junit {list-style: url(images/icons/junit.png);}
-
-#maven {list-style: url(images/icons/maven.png);}
-
-#git {list-style: url(images/icons/git.png);}
-
-.github {list-style: url(images/icons/github.png);}
-
-#vscode {list-style: url(images/icons/vscode.png);}
-
-#intellij {list-style: url(images/icons/intellij.png);}
-
-#clion {list-style: url(images/icons/clion.png);}
-
-#vp {list-style: url(images/icons/vp.png);}
-
-#js {list-style: url(images/icons/java-script.png);}
-
-#numpy {list-style: url(images/icons/NumPy.png);}
-
-#sklearn {list-style: url(images/icons/scikit-learn.png);}
-
-#matplotlib {list-style: url(images/icons/Matplotlib.png);}
-
-#three {list-style: url(images/icons/Three.png);}
